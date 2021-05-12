@@ -293,10 +293,11 @@ img {
 .footer__btn p {
   color: var(--light-grayish-blue);
   font-size: 15px;
+  color: var(--grayish-blue);
 }
 .attribution {
   background: var(--dark-blue);
-  padding-bottom: 12px;
+  /* padding-bottom: 12px 0px 12px; */
 }
 .attribution,
 a {
@@ -304,15 +305,112 @@ a {
 }
 
 /* MEDIA */
-@media only screen and (max-width: 1300px){
-  
-}
-@media only screen and (max-width: 1000px){
- 
-}
+@media only screen and (max-width: 1300px){}
+@media only screen and (max-width: 1000px){}
 @media only screen and (max-width: 768px){
-  
+  .navbar{
+    padding: 0px 20px 0px 20px !important;
+  }
+  .navbar__menu-link{
+    display: none;
+  }
+  .navbar__btn{
+    display: none;
+  }
+  .jumbotron{
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .jumbotron__images-bg{
+    display: none;
+  }
+  .jumbotron__images-phones{
+    width: 363px;
+    top: -5rem;
+    right: -5rem;
+  }
+  .jumbotron__info-container{
+    position: relative;
+    width: 100vw; 
+    bottom: -10rem;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .jumbotron__info-title{
+    font-size: 2.6rem;
+  }
+  .jumbotron__info-paragraph{
+    font-size: 1rem;
+  }
+  .jumbotron__info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features{
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .features__title{
+    text-align: center;
+  }
+  .features__title p{
+    max-width: 270px;
+    text-align: justify;
+  }
+  .features__display{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .features__display-infobox p{
+    width: 300px;
+    text-align-last: center;
+    margin-bottom: 10px;
+  }
+  .articles__stories{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .articles{
+   align-items: center;
+  }
+  .articles__title{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .articles__stories h2{
+    width: 100%;
+  }
+  .articles__stories p{
+    width: 100%;
+  }
+  .articles__stories-feature{
+    width: 320px;
+    margin: 15px 0px;
+  }
+  .articles__stories-feature img{
+    padding: 0;
+  }
+  .footer__menu{
+    padding: 0px;
+  }
+  .footer__menu-list{
+    text-align: center;
+  }
+  .footer__btn{
+    padding: 20px;
+    align-items: center;
+  }
 }
-@media only screen and (max-width: 320px){
- 
-}
+@media only screen and (max-width: 320px){}
