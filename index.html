@@ -29,7 +29,23 @@
     <div class="navbar__btn">
       <a href="#" class="navbar__btn-link">Request Invite</a>
     </div>
+    <!-- MOBILE BTN -->
+    <button onclick="toggle()" id='ham-button' class="ham-button">
+      <img src="images/icon-hamburger.svg">
+    </button>
   </header>
+  <!-- MOBILE MENU -->
+  <section class="header-mobile">
+  <div class="navbar__menu-mobile">
+    <div class="side-menu" id="side-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+    </div>
+  </section>
   <section class="jumbotron">
     <div class="jumbotron__info">
       <div class="jumbotron__info-container">
@@ -45,6 +61,7 @@
     <div class="jumbotron__images">
       <img class="jumbotron__images-bg" src="images/bg-intro-desktop.svg">
       <img class="jumbotron__images-phones" src="images/image-mockups.png">
+        <img class="jumbotron-mobile-bg" src="images/bg-intro-mobile.svg" />
     </div>
   </section>
   <section class="features">
@@ -152,5 +169,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Janaya Hernandez</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
