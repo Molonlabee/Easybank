@@ -123,6 +123,7 @@ body {
   background: var(--very-light-gray);
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 .jumbotron__info {
   height: 750px;
@@ -361,13 +362,17 @@ a {
 /* MEDIA */
 @media only screen and (max-width: 1300px){}
 @media only screen and (max-width: 1000px){
+  
    /* MOBILE NAVBAR */
    #side-menu{display: none; width: 100%;}
    #ham-button{display: block;}
 }
 @media only screen and (max-width: 768px){
-  .navbar{
+ .navbar{
     padding: 0px 20px 0px 20px !important;
+  }
+  .navbar__btn{
+    display: none;
   }
   .navbar__menu-link{
     display: none;
@@ -379,9 +384,13 @@ a {
     align-items: center;
     flex-direction: column-reverse;
     width: 100%;
+    /* overflow: hidden; */
   }
   .jumbotron__images-bg{
     display: none;
+  }
+  .jumbotron-mobile-bg{
+    display: block;
   }
   .jumbotron__images-phones{
     width: 363px;
