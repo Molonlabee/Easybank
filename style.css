@@ -87,17 +87,18 @@ body {
   display: none;
 }
 .ham-button{
-  position: absolute;
+  position: fixed;
   top: .3rem;
   right: 2rem;
 }
 .side-menu{
   display: none;
-  width: 350px !important;
+  width: 80% !important;
   height: 230px;
   background-color: var(--white);
   border-radius: 6px;
   color: var(--dark-blue);
+  position: fixed;
 }
 .side-menu a{
   display: block;
@@ -380,11 +381,13 @@ a {
   .navbar__menu-mobile{
     width: 100vw;
   }
+  .side-menu{
+    display: none;
+  }
   .jumbotron{
     align-items: center;
     flex-direction: column-reverse;
     width: 100%;
-    /* overflow: hidden; */
   }
   .jumbotron__images-bg{
     display: none;
