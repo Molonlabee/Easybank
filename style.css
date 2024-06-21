@@ -3,6 +3,7 @@
 }
 *:focus {
   outline: none;
+  overflow: hidden;
 }
 :root {
   /* ### Primary */
